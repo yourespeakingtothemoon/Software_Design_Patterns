@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34316.72
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDP_Decorators", "SDP_Decorators\SDP_Decorators.csproj", "{40817F84-4A86-419F-B480-35BB90CD02A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CafeRioSimulator", "CafeRioSimulator\CafeRioSimulator.csproj", "{82016968-D26F-4D8F-8CAC-6BDE6B9846EC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{40817F84-4A86-419F-B480-35BB90CD02A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40817F84-4A86-419F-B480-35BB90CD02A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40817F84-4A86-419F-B480-35BB90CD02A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40817F84-4A86-419F-B480-35BB90CD02A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82016968-D26F-4D8F-8CAC-6BDE6B9846EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82016968-D26F-4D8F-8CAC-6BDE6B9846EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82016968-D26F-4D8F-8CAC-6BDE6B9846EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82016968-D26F-4D8F-8CAC-6BDE6B9846EC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {04C6D068-96A9-4BDC-8437-FAA2BE85EFA3}
+	EndGlobalSection
+EndGlobal
