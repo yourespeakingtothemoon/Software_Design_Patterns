@@ -153,5 +153,13 @@ namespace PageBuilder
         {
 
         }
+
+        private void docBookToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            factory = new DocBookFactory();
+            docBookToolStripMenuItem.Checked = true;
+            hTMLToolStripMenuItem.Checked = false;
+            ClearScreen();
+        }
     }
 }

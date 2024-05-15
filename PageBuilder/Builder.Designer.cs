@@ -657,15 +657,16 @@
             hTMLToolStripMenuItem.Checked = true;
             hTMLToolStripMenuItem.CheckState = CheckState.Checked;
             hTMLToolStripMenuItem.Name = "hTMLToolStripMenuItem";
-            hTMLToolStripMenuItem.Size = new Size(153, 26);
+            hTMLToolStripMenuItem.Size = new Size(224, 26);
             hTMLToolStripMenuItem.Text = "HTML";
             hTMLToolStripMenuItem.Click += hTMLToolStripMenuItem_Click;
             // 
             // docBookToolStripMenuItem
             // 
             docBookToolStripMenuItem.Name = "docBookToolStripMenuItem";
-            docBookToolStripMenuItem.Size = new Size(153, 26);
+            docBookToolStripMenuItem.Size = new Size(224, 26);
             docBookToolStripMenuItem.Text = "DocBook";
+            docBookToolStripMenuItem.Click += docBookToolStripMenuItem_Click_1;
             // 
             // Builder
             // 
