@@ -24,7 +24,7 @@ namespace PageBuilder.Products.DocBook
 
         public string render()
         {
-           return "<Ssect" + level + " style=\"color: " + color + "; text-align: " + align + ";\">" + "<title>" + content + "</title>" + "</sect" + level + ">";
+           return "<sect" + level + " style=\"color: " + color + "; text-align: " + align + ";\">" + "<title>" + content + "</title>" + "</sect" + level + ">";
         }
     }
 }
