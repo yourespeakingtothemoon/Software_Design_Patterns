@@ -10,7 +10,7 @@ namespace CafeRioSimulator.ConcreteDecorators.AddOns
     internal class NoRice :  AddOn
     {
         private double price = 0.10;
-        private int tasteValue = 1;
+        private int tasteValue = 0;
         private string description = "served piping hot.";
         public NoRice(DishComponent baseComp) : base(baseComp)
         {

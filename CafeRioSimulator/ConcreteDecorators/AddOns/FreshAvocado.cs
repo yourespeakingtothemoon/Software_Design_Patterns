@@ -10,7 +10,7 @@ namespace CafeRioSimulator.ConcreteDecorators.AddOns
     internal class FreshAvocado :  AddOn
     {
         private double price = 1.00;
-        private int tasteValue = 7;
+        private int tasteValue = 1;
         private string description = "topped with fresh avocado slices, ";
         public FreshAvocado(DishComponent baseComp) : base(baseComp)
         {

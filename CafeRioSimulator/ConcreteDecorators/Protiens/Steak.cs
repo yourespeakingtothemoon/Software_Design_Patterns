@@ -7,10 +7,10 @@ using CafeRioSimulator.Interfaces;
 
 namespace CafeRioSimulator.ConcreteDecorators.Protiens
 {
-    internal class Steak : AddOn
+    internal class Steak : Protein
     {
         private double price = 1.50;
-        private int tasteValue = 3;
+        private int tasteValue = 2;
         private string description = "fire-grilled steak, ";
 
         public Steak(DishComponent baseComp) : base(baseComp)

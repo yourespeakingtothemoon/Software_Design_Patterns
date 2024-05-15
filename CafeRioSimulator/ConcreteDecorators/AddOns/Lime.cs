@@ -10,7 +10,7 @@ namespace CafeRioSimulator.ConcreteDecorators.AddOns
     internal class Lime :  AddOn
     {
         private double price = 0.15;
-        private int tasteValue = 5;
+        private int tasteValue = 1;
         private string description = "a squeeze of fresh lime juice, ";
         public Lime(DishComponent baseComp) : base(baseComp)
         {

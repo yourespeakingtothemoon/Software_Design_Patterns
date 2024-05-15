@@ -15,15 +15,15 @@ DishComponent dish = null;
 switch (dishChoice) {
     case "1":
         Console.WriteLine("You have chosen a Burrito. What protein would you like in your burrito?");
-        dish = new Burrito(7.99, 5);
+        dish = new Burrito(7.99, 1);
         break;
     case "2":
         Console.WriteLine("You have chosen The Plate of Tacos. What protein would you like in your tacos?");
-        dish = new Tacos(3.99, 3);
+        dish = new Tacos(3.99, 1);
         break;
     case "3":
         Console.WriteLine("You have chosen the Enchaladas. What protein would you like in your enchaladas?");
-        dish = new Enchiladas(5.99, 4);
+        dish = new Enchiladas(5.99, 1);
         break;
 }
 
@@ -104,6 +104,20 @@ else
 Console.WriteLine("Your dish is ready! Here is your order:");
 Console.WriteLine(dish.GetDescription());
 Console.WriteLine("Price: $" + dish.GetPrice());
-Console.WriteLine("Taste Value: " + dish.GetTasteValue());
+string tasteValue = "";
+    if (dish.GetTasteValue() > 7)
+{
+    tasteValue = "delicious";
+}
+else if (dish.GetTasteValue() < 4)
+{
+    tasteValue = "inedible";
+}
+else
+{
+    tasteValue = "alright";
+}
+
+Console.WriteLine("Taste Value: " + tasteValue);
 Console.WriteLine("Enjoy your meal!");
 

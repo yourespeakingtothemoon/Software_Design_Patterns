@@ -10,7 +10,7 @@ namespace CafeRioSimulator.ConcreteDecorators.Protiens
     internal class PolloAsado : AddOn
     {
         private double price = 0.75;
-        private int tasteValue = 6;
+        private int tasteValue = 3;
         private string description = "earthy and zesty grilled chicken, ";
         public PolloAsado(DishComponent baseComp) : base(baseComp)
         {

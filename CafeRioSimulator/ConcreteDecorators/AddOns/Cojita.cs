@@ -10,7 +10,7 @@ namespace CafeRioSimulator.ConcreteDecorators.AddOns
     internal class Cojita :  AddOn
     {
         private double price = 0.05;
-        private int tasteValue = 7;
+        private int tasteValue = 1;
         private string description = "a generous helping of cojita cheese, ";
         public Cojita(DishComponent baseComp) : base(baseComp)
         {

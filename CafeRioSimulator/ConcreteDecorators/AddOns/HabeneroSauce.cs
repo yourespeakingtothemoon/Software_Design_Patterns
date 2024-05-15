@@ -10,7 +10,7 @@ namespace CafeRioSimulator.ConcreteDecorators.AddOns
     internal class HabeneroSauce :  AddOn
     {
         private double price = 0.10;
-        private int tasteValue = 6;
+        private int tasteValue = 2;
         private string description = "a sweet and tastefully spicy habenero sauce, ";
         public HabeneroSauce(DishComponent baseComp) : base(baseComp)
         {

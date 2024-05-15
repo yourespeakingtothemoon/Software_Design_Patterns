@@ -10,7 +10,7 @@ namespace CafeRioSimulator.ConcreteDecorators.AddOns
     internal class Rice :  AddOn
     {
         private double price = 0.10;
-        private int tasteValue = 1;
+        private int tasteValue = 5;
         private string description = "served piping hot on a bed of fluffy rice seasoned with lime and cilantro, hope you dont have that one gene.";
         public Rice(DishComponent baseComp) : base(baseComp)
         {
