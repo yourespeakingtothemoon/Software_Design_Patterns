@@ -42,7 +42,7 @@
             paraAlign = new ComboBox();
             paraContent = new TextBox();
             Img = new TabPage();
-            DefaultSizeToggle = new RadioButton();
+            ImgSizeDef = new CheckBox();
             label2 = new Label();
             Imadd = new Button();
             pictureBox5 = new PictureBox();
@@ -246,7 +246,7 @@
             // 
             // Img
             // 
-            Img.Controls.Add(DefaultSizeToggle);
+            Img.Controls.Add(ImgSizeDef);
             Img.Controls.Add(label2);
             Img.Controls.Add(Imadd);
             Img.Controls.Add(pictureBox5);
@@ -266,16 +266,16 @@
             Img.Text = "Image";
             Img.UseVisualStyleBackColor = true;
             // 
-            // DefaultSizeToggle
+            // ImgSizeDef
             // 
-            DefaultSizeToggle.AutoSize = true;
-            DefaultSizeToggle.Location = new Point(94, 236);
-            DefaultSizeToggle.Name = "DefaultSizeToggle";
-            DefaultSizeToggle.Size = new Size(156, 24);
-            DefaultSizeToggle.TabIndex = 13;
-            DefaultSizeToggle.TabStop = true;
-            DefaultSizeToggle.Text = "Default Image Size";
-            DefaultSizeToggle.UseVisualStyleBackColor = true;
+            ImgSizeDef.AutoSize = true;
+            ImgSizeDef.Location = new Point(95, 240);
+            ImgSizeDef.Name = "ImgSizeDef";
+            ImgSizeDef.Size = new Size(157, 24);
+            ImgSizeDef.TabIndex = 14;
+            ImgSizeDef.Text = "Default Image Size";
+            ImgSizeDef.UseVisualStyleBackColor = true;
+            ImgSizeDef.CheckedChanged += ImgSizeDef_CheckedChanged;
             // 
             // label2
             // 
@@ -657,14 +657,14 @@
             hTMLToolStripMenuItem.Checked = true;
             hTMLToolStripMenuItem.CheckState = CheckState.Checked;
             hTMLToolStripMenuItem.Name = "hTMLToolStripMenuItem";
-            hTMLToolStripMenuItem.Size = new Size(224, 26);
+            hTMLToolStripMenuItem.Size = new Size(153, 26);
             hTMLToolStripMenuItem.Text = "HTML";
             hTMLToolStripMenuItem.Click += hTMLToolStripMenuItem_Click;
             // 
             // docBookToolStripMenuItem
             // 
             docBookToolStripMenuItem.Name = "docBookToolStripMenuItem";
-            docBookToolStripMenuItem.Size = new Size(224, 26);
+            docBookToolStripMenuItem.Size = new Size(153, 26);
             docBookToolStripMenuItem.Text = "DocBook";
             docBookToolStripMenuItem.Click += docBookToolStripMenuItem_Click_1;
             // 
@@ -777,6 +777,6 @@
         private ToolStripMenuItem hTMLToolStripMenuItem;
         private ToolStripMenuItem docBookToolStripMenuItem;
         private Label label2;
-        private RadioButton DefaultSizeToggle;
+        private CheckBox ImgSizeDef;
     }
 }

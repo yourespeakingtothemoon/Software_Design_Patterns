@@ -84,7 +84,7 @@ namespace PageBuilder
 
         private void Imadd_Click(object sender, EventArgs e)
         {
-            if (DefaultSizeToggle.Checked)
+            if (ImgSizeDef.Checked)
             {
                 elements.Add(factory.create_image(ImgUrlBox.Text, "auto", "auto", ImageAlign.Text));
             }
@@ -111,19 +111,15 @@ namespace PageBuilder
 
         private void PreviewBtn_Click(object sender, EventArgs e)
         {
-            //save to file and open the file in browser
             string path = Path.GetTempPath() + "pagebuilderpreview" + factory.filesuffix;
-            //if it doesnt exist, create file
             File.Create(path).Dispose();
             File.WriteAllText(path, OutBox.Text);
-            //open the file
             Process.Start(new ProcessStartInfo(path) { UseShellExecute = true });
 
         }
 
         private void CopyToClip_Click(object sender, EventArgs e)
         {
-            //copy text to clipboard
             Clipboard.SetText(OutBox.Text);
         }
 
@@ -134,7 +130,6 @@ namespace PageBuilder
 
         private void paraColorPick_Click(object sender, EventArgs e)
         {
-            //open color picker dialog
             paraColor.ShowDialog();
 
         }
@@ -160,6 +155,20 @@ namespace PageBuilder
             docBookToolStripMenuItem.Checked = true;
             hTMLToolStripMenuItem.Checked = false;
             ClearScreen();
+        }
+
+        private void ImgSizeDef_CheckedChanged(object sender, EventArgs e)
+        {
+            if (ImgSizeDef.Checked)
+            {
+                WidthUpDown.Enabled = false;
+                HeightUpDown.Enabled = false;
+            }
+            else
+            {
+                WidthUpDown.Enabled = true;
+                HeightUpDown.Enabled = true;
+            }
         }
     }
 }
